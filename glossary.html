@@ -1,47 +1,421 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2759
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity 101 for HR | Phishee.ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; }
+        .card-container { perspective: 1000px; height: 280px; cursor: pointer; }
+        .card-inner { position: relative; width: 100%; height: 100%; transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1); transform-style: preserve-3d; }
+        .card-container.is-flipped .card-inner { transform: rotateY(180deg); }
+        .card-front, .card-back { position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; flex-direction: column; justify-content: center; padding: 1.5rem; border-radius: 1rem; border: 1px solid rgba(255, 255, 255, 0.1); }
+        .card-front { background: rgba(23, 23, 23, 0.8); }
+        .card-back { transform: rotateY(180deg); color: #0a0a0a; border: none; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4); }
+        .back-blue { background: #60a5fa; }
+        .back-teal { background: #2dced8; }
+        .card-back p { color: #0a0a0a; font-weight: 600; line-height: 1.5; }
+        .card-back i { color: #0a0a0a !important; }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200">
+    <nav class="fixed w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800 py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <img src="logo.png" alt="Phishee" class="h-8 md:h-10 w-auto">
+            </a>
+            <a href="index.html" class="text-sm font-medium text-slate-400 hover:text-white flex items-center gap-2">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i> Back to Main Site
+            </a>
+        </div>
+    </nav>
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Cybersecurity 101 for HR | Phishee</title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <script src="https://unpkg.com/lucide@latest"></script>\
-    <style>\
-        body \{ font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e5e5e5; \}\
-        .card-container \{ perspective: 1000px; height: 250px; cursor: pointer; \}\
-        .card-inner \{ position: relative; width: 100%; height: 100%; transition: transform 0.6s; transform-style: preserve-3d; \}\
-        .is-flipped .card-inner \{ transform: rotateY(180deg); \}\
-        .card-front, .card-back \{ position: absolute; width: 100%; height: 100%; backface-visibility: hidden; display: flex; align-items: center; justify-content: center; padding: 2rem; border-radius: 1rem; border: 1px solid #262626; \}\
-        .card-front \{ background: #171717; \}\
-        .card-back \{ background: #2dced8; color: #000; transform: rotateY(180deg); font-weight: 600; text-align: center; \}\
-    </style>\
-</head>\
-<body class="pt-32 px-6">\
-    <nav class="fixed top-0 w-full left-0 bg-black/80 backdrop-blur-md border-b border-white/10 py-4 z-50">\
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">\
-            <a href="index.html"><img src="logo.png" alt="Phishee" class="h-8"></a>\
-            <a href="index.html" class="text-sm text-neutral-400 hover:text-white">\uc0\u8592  Back Home</a>\
-        </div>\
-    </nav>\
-    <div class="max-w-7xl mx-auto">\
-        <h1 class="text-4xl font-bold mb-12">Cybersecurity 101 for HR</h1>\
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">\
-            <div class="card-container" onclick="this.classList.toggle('is-flipped')">\
-                <div class="card-inner">\
-                    <div class="card-front text-xl font-bold">Zero Trust</div>\
-                    <div class="card-back">A security model where everyone, even candidates, must be verified every time.</div>\
-                </div>\
-            </div>\
-            <!-- Repeat for other cards -->\
-        </div>\
-    </div>\
-    <script>lucide.createIcons();</script>\
-</body>\
-</html>}
+    <main class="relative z-10 pt-40 pb-24 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="max-w-3xl mb-16">
+                <div class="text-teal-custom text-xs font-bold uppercase tracking-widest mb-4">Internal Knowledge Base</div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white mb-6">Cybersecurity 101 for HR</h1>
+                <p class="text-xl text-neutral-400 leading-relaxed">
+                    Speak the CISO's language and understand the modern threat landscape.
+                </p>
+            </div>
+
+            <!-- Category 1 -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="text-blue-400 text-2xl font-bold">01</span>
+                    General Cybersecurity Concepts
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="shield-check" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Zero Trust Architecture</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    A security model that assumes every person—even a "trusted" candidate or employee—must have their identity verified every single time they try to access company systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="key" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Initial Access</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    The first "footprint" a hacker makes in your company network, which nowadays often happens when a criminal poses as a job seeker to get their foot in the door.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="users" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Insider Threat</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    The risk that someone who already has "the keys to the building"—like a current employee or a fraudulent new hire—will accidentally or intentionally cause a data breach.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="fingerprint" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">IAM Framework</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    Identity & Access Management: The digital "gatekeeper" system that ensures only the right people have access to specific HR tools (like payroll or employee records) based on their job role.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="file-check" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">SOC 2 / ISO 27001</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    These are "gold standard" security certifications that prove a company handles sensitive candidate and employee data with the highest level of care.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="database" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Data Sovereignty</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    The legal requirement to follow the specific data privacy laws (like GDPR) of the country where an employee actually lives and works.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="eye-off" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Zero-Knowledge Proof</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    A clever privacy technology that allows a recruiter to confirm a candidate is telling the truth (like verifying they have a degree) without actually seeing or storing their private documents.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="award" class="text-blue-400 mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">CMMC Standard</h3>
+                            </div>
+                            <div class="card-back back-blue">
+                                <p class="text-sm">
+                                    A set of strict cybersecurity rules required by the government to ensure any company—including their HR department—is secure enough to handle sensitive federal or defense-related information.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2 -->
+            <div class="mb-20">
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="text-teal-custom text-2xl font-bold">02</span>
+                    Candidate Fraud Specifics
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="video" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Deepfake Identity</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    Using AI-generated video or audio to impersonate a real person or create a completely "fake" face during a remote interview.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="user-cog" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Synthetic Identity Fraud</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    A "Frankenstein" identity created by combining real stolen data (like a Social Security number) with fake information (like a new name and address).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="user-plus" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Proxy Interviewing</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    A bait-and-switch tactic where a highly skilled professional secretly takes the technical interview on behalf of a less-qualified candidate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="terminal" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Resume Padding</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    AI-Enhanced: Using AI tools to automatically generate perfect-fit experience, fake certifications, and falsified employment history that bypasses standard filters.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="layers" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Virtual Backgrounds</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    Concealment: Using digital backgrounds or "looping" videos during an interview to hide the fact that the candidate is actually in a different country or a "click farm" office.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="link" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Footprint Mismatch</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    Digital: When a candidate's professional online presence (like LinkedIn or GitHub) doesn't exist or doesn't match the experience they claim on their application.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="activity" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Social Engineering</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    For Onboarding: A scam where a "new hire" tries to convince HR to change their direct deposit info or ship high-end laptop equipment to a different address before their start date.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-container" onclick="this.classList.toggle('is-flipped')">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <i data-lucide="shield-alert" class="text-teal-custom mb-4"></i>
+                                <h3 class="text-lg font-bold text-white leading-tight">Credential Stuffing</h3>
+                            </div>
+                            <div class="card-back back-teal">
+                                <p class="text-sm">
+                                    HR Edition: When a fraudster uses a stolen list of usernames and passwords from other data breaches to try and break into your company’s specific Applicant Tracking System (ATS).
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Intelligence from the Frontlines -->
+            <div class="mb-16">
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center gap-3">
+                    <span class="text-teal-custom text-2xl font-bold">03</span>
+                    Intelligence from the Frontlines
+                </h2>
+                <p class="text-neutral-400 mb-10 max-w-3xl leading-relaxed">
+                    Malicious tactics are evolving faster than traditional screening methods can adapt. We’ve curated 10 essential research papers and reports to help you visualize the scale, cost, and sophistication of current identity orchestration campaigns.
+                </p>
+                
+                <div class="space-y-2">
+                    <a href="https://www.experianplc.com/newsroom/press-releases/2026/experian-s-new-fraud-forecast-warns-agentic-ai--deepfake-job-can" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Experian's new fraud forecast warns agentic AI, deepfake job candidates and cyber break-ins are top threats for 2026.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            experianplc.com
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.fbi.gov/investigate/cyber/alerts/2025/north-korean-it-worker-threats-to-u-s-businesses" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            FBI Update: North Korean IT Worker Threats to U.S. Businesses and New Red Flag Indicators.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            fbi.gov
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://checkr.com/resources/articles/hiring-hoax-manager-survey-2025" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            The Hiring Hoax: What 3,000 Managers Revealed about AI & Identity Fraud in 2025.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            checkr.com
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://apps.it.purdue.edu/sites/Home/DirectoryApi/Files/ce21a443-8bcf-4484-86b7-fddb43b8b001/Download" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Assessing Intentional Resume Deception: Development and Nomological Network of a Resume Fraud Measure.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            purdue.edu
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.crosschq.com/blog/interview-fraud-detection-your-complete-defense-guide-for-2025" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Interview Fraud Detection: Your Complete Defense Guide for 2025.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            crosschq.com
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.redshiftrecruiting.com/career-blog/cost-of-candidate-fraud" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            The Cost of Candidate Fraud: Why Cutting Corners in Hiring Backfires.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            redshiftrecruiting.com
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://zenodo.org/records/15429570/files/Deepfake%20Video%20Face%20Detection-Formatted%20Paper.pdf?download=1" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Robust Deepfake Video Detection: Exploiting Temporal Dependencies for Interview Security.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            zenodo.org
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://therecord.media/multiple-us-nationals-guilty-pleas-north-korean-it-worker-scams" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Multiple US citizens plead guilty to helping North Korean IT workers earn $2 million.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            therecord.media
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://las.illinois.edu/news/2023-07-13/psychology-being-duped" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            The Psychology of Being Duped: Why Human Habits Make Us Susceptible to Fraud.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            illinois.edu
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                    <a href="https://academicintegrity.eu/conference/proceedings/2021/carmichael_eaton21.pdf" target="_blank" class="p-4 border-b border-neutral-900 group flex justify-between items-center transition-all hover:bg-neutral-900/40">
+                        <span class="text-lg font-semibold text-teal-custom transition-all">
+                            Degrees of Deceit Research Project: Preliminary Findings on Credential Fraud in Canada.
+                        </span>
+                        <span class="flex items-center gap-3 text-white group-hover:text-teal-custom transition-colors text-xs font-medium shrink-0">
+                            academicintegrity.eu
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Final CTA Section -->
+            <section class="py-24 border-t border-neutral-900 text-center relative overflow-hidden">
+                <div class="max-w-4xl mx-auto px-6 relative z-10">
+                    <p class="text-2xl md:text-3xl font-bold text-neutral-300 mb-12 leading-relaxed">
+                        Coordinated application attacks. AI-generated identities. Fake candidates. What used to be a recruiting problem is now your biggest enterprise risk.
+                    </p>
+                    
+                    <a href="index.html" class="inline-flex items-center gap-2 px-10 py-5 bg-[#2dced8] text-slate-950 rounded-2xl font-bold text-xl hover:scale-105 transition-all shadow-lg shadow-[#2dced8]/20 mb-12">
+                        Request Early Access <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </a>
+                    
+                    <div class="text-neutral-500 font-medium text-sm">
+                        <p class="mb-1">Phishee helps organizations detect high-risk candidates early.</p>
+                        <p class="text-neutral-400">AI-assisted. Always human-reviewed.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-neutral-900 relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <span class="text-lg font-bold text-white tracking-tighter opacity-50">PHISHEE</span>
+            <p class="text-neutral-600 text-xs">© 2026 Phishee Security Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+        // Flip the first card briefly on load as a behavior hint
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstCard = document.querySelector('.card-container');
+            if (firstCard) {
+                firstCard.classList.add('is-flipped');
+                setTimeout(() => {
+                    firstCard.classList.remove('is-flipped');
+                }, 600);
+            }
+        });
+    </script>
+</body>
+</html>

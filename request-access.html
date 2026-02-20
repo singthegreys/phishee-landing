@@ -1,28 +1,46 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2759
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Request Access | Phishee</title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-</head>\
-<body class="bg-neutral-950 text-white flex items-center justify-center min-h-screen">\
-    <div class="max-w-md w-full p-8 bg-neutral-900 rounded-3xl border border-neutral-800">\
-        <img src="logo.png" alt="Phishee" class="h-10 mx-auto mb-8">\
-        <h2 class="text-2xl font-bold text-center mb-6">Request Early Access</h2>\
-        <form action="#" method="POST" class="space-y-4">\
-            <input type="text" placeholder="Full Name" class="w-full p-4 bg-black border border-neutral-800 rounded-xl" required>\
-            <input type="email" placeholder="Work Email" class="w-full p-4 bg-black border border-neutral-800 rounded-xl" required>\
-            <input type="text" placeholder="Company" class="w-full p-4 bg-black border border-neutral-800 rounded-xl" required>\
-            <button class="w-full py-4 bg-[#2dced8] text-black font-bold rounded-xl">Join the Waitlist</button>\
-        </form>\
-    </div>\
-</body>\
-</html>}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Access | Phishee.ai</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        input:focus { outline: none; border-color: #2dced8 !important; box-shadow: 0 0 0 2px rgba(45, 206, 216, 0.2); }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200 flex items-center justify-center min-h-screen px-6">
+    <div class="max-w-md w-full">
+        <a href="index.html" class="flex justify-center mb-12">
+            <img src="logo.png" alt="Phishee" class="h-10">
+        </a>
+        <div class="bg-neutral-900/50 p-8 rounded-3xl border border-neutral-800 shadow-2xl backdrop-blur-sm">
+            <h1 class="text-3xl font-bold text-white text-center mb-2">Request Invite</h1>
+            <p class="text-neutral-500 text-center mb-8">Secure your hiring pipeline.</p>
+            
+            <form action="YOUR_MAILCHIMP_URL_HERE" method="post" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-neutral-500 uppercase tracking-widest mb-2">Full Name</label>
+                    <input type="text" name="FNAME" required class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-white transition-all">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-neutral-500 uppercase tracking-widest mb-2">Work Email</label>
+                    <input type="email" name="EMAIL" required class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-white transition-all">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-neutral-500 uppercase tracking-widest mb-2">Company</label>
+                    <input type="text" name="COMPANY" required class="w-full bg-black border border-neutral-800 rounded-xl px-4 py-3 text-white transition-all">
+                </div>
+                <button type="submit" class="w-full py-4 bg-[#2dced8] text-neutral-950 font-bold rounded-xl hover:scale-[1.02] transition-all shadow-lg shadow-[#2dced8]/20">
+                    Join the Waitlist
+                </button>
+            </form>
+            <a href="index.html" class="block text-center mt-6 text-sm text-neutral-600 hover:text-white transition-colors">Cancel</a>
+        </div>
+    </div>
+    <script>lucide.createIcons();</script>
+</body>
+</html>

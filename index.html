@@ -1,46 +1,510 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2759
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishee | With Phishee, your Hiring Process is Now a Security Perimeter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .bg-teal-custom { background-color: #2dced8; }
+        .text-teal-custom { color: #2dced8; }
+        .border-teal-custom { border-color: #2dced8; }
+        .selection-teal::selection { background-color: rgba(45, 206, 216, 0.3); }
+        .bg-grid-pattern {
+            background-size: 50px 50px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-neutral-950 text-neutral-200 selection-teal overflow-x-hidden">
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-    <meta charset="UTF-8">\
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
-    <title>Phishee | Hiring is now a Security Perimeter</title>\
-    <script src="https://cdn.tailwindcss.com"></script>\
-    <script src="https://unpkg.com/lucide@latest"></script>\
-    <style>\
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');\
-        body \{ font-family: 'Inter', sans-serif; scroll-behavior: smooth; \}\
-        .bg-teal-custom \{ background-color: #2dced8; \}\
-        .text-teal-custom \{ color: #2dced8; \}\
-        .bg-grid-pattern \{\
-            background-size: 50px 50px;\
-            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);\
-        \}\
-    </style>\
-</head>\
-<body class="bg-neutral-950 text-neutral-200 overflow-x-hidden">\
-    <div class="fixed inset-0 bg-grid-pattern pointer-events-none opacity-20"></div>\
-    <nav class="fixed w-full z-50 bg-neutral-950/80 backdrop-blur-md border-b border-neutral-800 py-4">\
-        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">\
-            <a href="index.html"><img src="logo.png" alt="Phishee" class="h-10 w-auto"></a>\
-            <div class="hidden md:flex items-center gap-10 text-sm font-medium">\
-                <a href="glossary.html" class="text-slate-400 hover:text-white transition-colors">Cybersecurity 101 for HR</a>\
-                <a href="request-access.html" class="px-5 py-2.5 bg-white text-neutral-950 rounded-lg font-bold hover:bg-[#2dced8] transition-all">Request Early Access</a>\
-            </div>\
-        </div>\
-    </nav>\
-    <main class="relative z-10 pt-48 pb-24 px-6 text-center">\
-        <div class="max-w-4xl mx-auto">\
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8 leading-tight">Your hiring process is now a <span class="text-teal-custom">security perimeter.</span></h1>\
-            <p class="text-xl text-neutral-400 mb-12">Coordinated application attacks. AI-generated identities. Fake candidates. What used to be a recruiting problem is now your biggest enterprise risk.</p>\
-            <a href="request-access.html" class="px-10 py-5 bg-teal-custom text-neutral-950 rounded-xl font-bold text-xl hover:scale-105 transition-all inline-block">Request Early Access</a>\
-        </div>\
-    </main>\
-</body>\
-</html>}
+    <!-- Background Decor -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none z-0">
+        <div class="absolute inset-0 bg-grid-pattern"></div>
+        <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-[#2dced8]/5 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-neutral-500/5 rounded-full blur-[120px]"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.02]"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 cursor-pointer">
+                <img src="logo.png" alt="Phishee" class="h-8 md:h-10 w-auto">
+            </a>
+            
+            <div class="hidden md:flex items-center gap-10 text-sm font-medium text-slate-400">
+                <a href="glossary.html" class="hover:text-white transition-colors border-b-2 border-transparent hover:border-teal-custom py-1">
+                    Cybersecurity 101 for HR
+                </a>
+                <a href="request-access.html" class="px-5 py-2.5 bg-white text-neutral-950 rounded-lg font-bold hover:bg-[#2dced8] transition-all">
+                    Request Early Access
+                </a>
+            </div>
+
+            <button class="md:hidden text-white" onclick="toggleMenu()">
+                <i data-lucide="menu" id="menu-icon"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-neutral-900 border-b border-neutral-800 p-6 flex flex-col gap-4">
+            <a href="glossary.html" class="text-neutral-300">Cybersecurity 101 for HR</a>
+            <a href="request-access.html" class="w-full py-3 bg-teal-custom text-neutral-950 font-bold rounded-lg">
+                Request Early Access
+            </a>
+        </div>
+    </nav>
+
+    <!-- LANDING PAGE CONTENT -->
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="relative pt-40 pb-24 md:pt-56 md:pb-40 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2dced8]/10 border border-[#2dced8]/20 text-teal-custom text-xs font-bold uppercase tracking-widest mb-8">
+                    <i data-lucide="cpu" class="w-3 h-3"></i> Built for the era of AI-generated candidates
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight mb-8 leading-[1.1]">
+                    With Phishee, your hiring process is now a <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-neutral-200 to-neutral-500">security perimeter.</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-neutral-400 max-w-4xl mx-auto mb-10 leading-relaxed">
+                    Coordinated application attacks. AI-generated identities. Fake candidates. What used to be a recruiting problem is now your biggest enterprise risk.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                    <a href="request-access.html" class="w-full sm:w-auto px-10 py-5 bg-teal-custom text-neutral-950 rounded-xl font-bold text-xl hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#2dced8]/40">
+                        Request Early Access <i data-lucide="chevron-right" class="w-6 h-6"></i>
+                    </a>
+                </div>
+                <p class="text-neutral-500 text-sm font-medium">
+                    Phishee helps organizations detect high-risk candidates early. <br class="hidden sm:block">
+                    <span class="text-neutral-400">AI-assisted. Always human-reviewed.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Attack Surface Section -->
+        <section class="py-24 px-6 border-y border-neutral-900 bg-neutral-900/10 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
+                            The Hiring Funnel Has Become <br> an Attack Surface
+                        </h2>
+                        <p class="text-lg text-neutral-400 mb-8 leading-relaxed">
+                            Remote work. AI-generated identities. Synthetic profiles. The barrier to impersonation has collapsed. Organizations are no longer just screening for talent—they are defending against infiltration.
+                        </p>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3 text-neutral-300">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Fabricated employment histories</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-neutral-300">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Deepfake-supported interviews</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-neutral-300">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Multiple candidates sharing digital footprints</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-neutral-300">
+                                <i data-lucide="alert-triangle" class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5"></i>
+                                <span>Coordinated bot application campaigns</span>
+                            </li>
+                        </ul>
+                        <p class="mt-8 text-teal-custom font-medium text-lg italic">
+                            "Failures in the hiring process don't just stay in hiring. They gain system access."
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-px bg-neutral-800 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="bg-neutral-950 p-8 border-l border-neutral-800">
+                            <div class="text-4xl md:text-5xl font-bold text-white mb-2">31%</div>
+                            <div class="text-neutral-400 text-sm">
+                                Of hiring managers report experience interviewing candidates with fake identities in 2025 (Checkr)
+                            </div>
+                        </div>
+                        <div class="bg-neutral-950 p-8 border-l border-neutral-800">
+                            <div class="text-4xl md:text-5xl font-bold text-white mb-2">1 in 4</div>
+                            <div class="text-neutral-400 text-sm">
+                                Candidates likely to be fake by 2028 (Gartner)
+                            </div>
+                        </div>
+                        <div class="bg-neutral-950 p-8 border-l border-neutral-800">
+                            <div class="text-4xl md:text-5xl font-bold text-white mb-2">$40B+</div>
+                            <div class="text-neutral-400 text-sm">
+                                Annual cost of identity fraud to businesses.
+                            </div>
+                        </div>
+                        <div class="bg-neutral-950 p-8 border-l border-neutral-800">
+                            <div class="text-4xl md:text-5xl font-bold text-white mb-2">30%</div>
+                            <div class="text-neutral-400 text-sm">
+                                Of all data breaches in 2025 were due to fraudulent and malicious employees (Verizon)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2026 Context Section -->
+        <section class="py-32 px-6 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="max-w-3xl mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">What Candidate Fraud <br>Means in 2026</h2>
+                    <p class="text-xl text-neutral-400 leading-relaxed">
+                        In the previous decade, fraud was about lying about a degree. Today, it is about
+                        <span class="text-white font-semibold underline decoration-teal-custom decoration-2 underline-offset-4">
+                            Identity Orchestration.
+                        </span>
+                        We categorize it into three levels:
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Level 1: Bot -->
+                    <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800 hover:bg-neutral-900/60 transition-all">
+                        <div class="w-12 h-12 rounded-lg bg-teal-custom/10 border border-teal-custom/20 flex items-center justify-center mb-6">
+                            <i data-lucide="ghost" class="text-teal-custom w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">The "Bot" Candidate</h3>
+                        <div class="space-y-4 text-sm leading-relaxed">
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Automation Fraud:</span>
+                                The mass deployment of AI-generated personas using disposable digital infrastructure to overwhelm recruitment pipelines.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">The Tactics:</span>
+                                Uses temporary phone numbers, burner email addresses, and fake social media profiles to support mass-produced, templated resumes.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Risk Level:</span> Medium Risk.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Probability:</span> Highest.
+                            </p>
+                            <p class="text-neutral-300 italic border-t border-neutral-800 pt-4">
+                                <span class="text-neutral-200 font-medium not-italic">The Example:</span>
+                                An automated script submits thousands of applications across multiple platforms, using unique VOIP numbers and AI-synced LinkedIn profiles for each.
+                            </p>
+                            <p class="text-teal-custom/80 font-medium">
+                                <span class="text-neutral-200 font-medium">The Goal:</span>
+                                To exploit "Easy Apply" features and flood systems with high-volume, low-friction applications that bypass initial automated filters.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Level 2: Puppet -->
+                    <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800 hover:bg-neutral-900/60 transition-all">
+                        <div class="w-12 h-12 rounded-lg bg-teal-custom/10 border border-teal-custom/20 flex items-center justify-center mb-6">
+                            <i data-lucide="video" class="text-teal-custom w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">The "Digital Puppet"</h3>
+                        <div class="space-y-4 text-sm leading-relaxed">
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Deepfake Fraud:</span>
+                                The use of real-time AI-driven video overlays and voice cloning technology to impersonate a qualified candidate during live interviews.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">The Tactics:</span>
+                                Real-time manipulation of a person’s appearance and voice to match a fabricated or stolen profile.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Risk Level:</span> High Risk.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Probability:</span> High.
+                            </p>
+                            <p class="text-neutral-300 italic border-t border-neutral-800 pt-4">
+                                <span class="text-neutral-200 font-medium not-italic">The Example:</span>
+                                They look like a 30-year-old developer from Austin but are actually a "proxy" operator in a different jurisdiction.
+                            </p>
+                            <p class="text-teal-custom/80 font-medium">
+                                <span class="text-neutral-200 font-medium">The Goal:</span>
+                                To bypass human intuition and visual checks by presenting a familiar, localized persona.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Level 3: Shadow -->
+                    <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-800 hover:bg-neutral-900/60 transition-all">
+                        <div class="w-12 h-12 rounded-lg bg-teal-custom/10 border border-teal-custom/20 flex items-center justify-center mb-6">
+                            <i data-lucide="user-minus" class="text-teal-custom w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4">The "Shadow" Candidate</h3>
+                        <div class="space-y-4 text-sm leading-relaxed">
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Identity Fraud:</span>
+                                The use of stolen, purchased, or synthetic PII (names, emails, SSNs, financial records) to pass initial screening and background checks.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">The Tactics:</span>
+                                Employs real credentials from unsuspecting individuals to bypass traditional verification systems.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Risk Level:</span> Highest Risk.
+                            </p>
+                            <p class="text-neutral-400">
+                                <span class="text-neutral-200 font-medium">Probability:</span> Medium.
+                            </p>
+                            <p class="text-neutral-300 italic border-t border-neutral-800 pt-4">
+                                <span class="text-neutral-200 font-medium not-italic">The Example:</span>
+                                Often linked to state-sponsored actors (e.g., North Korean IT workers) trying to gain access to Western corporate networks.
+                            </p>
+                            <p class="text-teal-custom/80 font-medium">
+                                <span class="text-neutral-200 font-medium">The Goal:</span>
+                                To establish a "clean" persona that can survive a deep security vetting process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trojan Hire -->
+        <section class="py-32 px-6 relative z-10 border-t border-neutral-900">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">The Trojan Hire</h2>
+                    <p class="text-neutral-400 max-w-3xl mx-auto text-lg leading-relaxed">
+                        Newest Tier 1 Cybersecurity Threat: the unvetted new hire. A simple PDF resume is the ultimate backdoor into your hardened network. Treat the Trojan Hire as the global risk priority that it is.
+                    </p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- CISO Card -->
+                    <div class="p-8 md:p-12 rounded-3xl bg-neutral-900 border border-neutral-800 hover:border-blue-500/30 transition-all relative">
+                        <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-8 border border-blue-500/20">
+                            <i data-lucide="lock" class="text-blue-400 w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-1">CISO & Security Operations</h3>
+                        <p class="text-blue-400 text-[10px] font-bold uppercase tracking-[0.2em] mb-8">STRATEGIC RISK REDUCTION</p>
+                        <p class="text-neutral-400 mb-8 text-[24px] font-light leading-[30px] min-h-[6rem]">
+                            "Unauthorized access doesn't always start with a breach. Sometimes it starts with an offer letter."
+                        </p>
+                        <div class="mb-10">
+                            <h4 class="text-white font-normal mb-10 text-sm md:text-base leading-relaxed">
+                                Average cost of a data breach due to malicious insiders is $4.92million (IBM)
+                            </h4>
+                            <div class="grid grid-cols-2 gap-6 text-sm">
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1 text-base">Compliance Risk</h4>
+                                    <p class="text-neutral-400">Automatic violation of SOC2 and GDPR identity standards.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1 text-base">Insider Threat</h4>
+                                    <p class="text-neutral-400">Hard-to-detect behavior from "legally" hired employees.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1 text-base">Credential Exposure</h4>
+                                    <p class="text-neutral-400">Malicious actors are gaining legitimate system access.</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-semibold mb-1 text-base">Data Exfiltration</h4>
+                                    <p class="text-neutral-400">Early access to customer data before internal monitoring triggers.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8 border-t border-neutral-800 text-neutral-400 text-sm font-medium">
+                            By the time suspicious behavior appears, the damage is already in motion.
+                        </div>
+                    </div>
+
+                    <!-- CHRO Card -->
+                    <div class="p-8 md:p-12 rounded-3xl bg-neutral-900 border border-neutral-800 hover:border-[#2dced8]/30 transition-all relative flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 bg-[#2dced8]/10 rounded-xl flex items-center justify-center mb-8 border border-[#2dced8]/20">
+                                <i data-lucide="users" class="text-teal-custom w-6 h-6"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-1">CHRO & Talent Acquisition</h3>
+                            <p class="text-teal-custom text-[10px] font-bold uppercase tracking-[0.2em] mb-8">OPERATIONAL INTEGRITY</p>
+                            <p class="text-neutral-400 mb-8 text-[24px] font-light leading-[30px] min-h-[6rem]">
+                                "Recruiters are becoming fraud screeners. That's not a scalable solution for modern talent teams."
+                            </p>
+                            <div class="mb-10">
+                                <h4 class="text-white font-normal mb-10 text-sm md:text-base leading-relaxed">
+                                    Each fraudulent hires cost between $17,000 and $240,000 (Calyptus)
+                                </h4>
+                                <div class="grid grid-cols-2 gap-6 text-sm">
+                                    <div>
+                                        <h4 class="text-white font-semibold mb-1 text-base">Resource Waste</h4>
+                                        <p class="text-neutral-400 text-sm">Hours of waste lost to fictional applicants.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold mb-1 text-base">Low Signal | High Noise</h4>
+                                        <p class="text-neutral-400">AI-powered fake resumes and Interview acting.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold mb-1 text-base">Application Floods</h4>
+                                        <p class="text-neutral-400">AI bots are overwhelming your teams manual review.</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-semibold mb-1 text-base">Bait-and-Switch</h4>
+                                        <p class="text-neutral-400">Proxies are conducting interviews for a different final hire.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-8 border-t border-neutral-800 text-neutral-400 font-medium text-sm">
+                            When every application looks polished, fraud hides in plain sight.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bridge Section -->
+        <section class="py-24 bg-white text-neutral-950 text-center px-6 relative z-10">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Different symptoms. <br>Same exposure.</h2>
+                <div class="h-1 w-24 mx-auto mb-10 bg-teal-custom"></div>
+                <p class="text-xl md:text-2xl font-bold italic leading-relaxed">
+                    Candidate fraud is no longer a departmental issue.<br>
+                    It’s an organizational one.
+                </p>
+            </div>
+        </section>
+
+        <!-- How Phishee Works -->
+        <section class="py-32 px-6 relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <div class="inline-block px-3 py-1 rounded bg-[#2dced8]/10 border border-[#2dced8]/20 text-teal-custom text-xs font-bold mb-6 uppercase tracking-widest">
+                            HOW IT WORKS
+                        </div>
+                        <h2 class="text-4xl md:text-5xl font-bold text-white mb-8 leading-tight">How Phishee works</h2>
+                        <p class="text-xl text-neutral-200 font-bold mb-6">Multisignal Alerts x AI contextualization</p>
+                        <p class="text-lg text-neutral-400 mb-10 leading-relaxed">
+                            Detect risk before access is granted. Clear risk signals when they matter most. Powered by AI, but with Human in the loop with no black boxes or fully automated decisions.
+                        </p>
+                        <div class="p-8 bg-neutral-900/40 rounded-2xl border-l-4 border-teal-custom mt-12">
+                            <p class="text-2xl font-bold text-white italic leading-relaxed">
+                                "Go beyond background checks. Phishee evaluates who you’re about to trust."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="relative bg-neutral-950 border border-neutral-800 rounded-3xl p-8 md:p-10 shadow-3xl">
+                        <h3 class="text-xl font-bold text-white mb-8 flex items-center gap-3">
+                            <i data-lucide="shield-check" class="text-teal-custom w-6 h-6"></i> Detection Framework
+                        </h3>
+                        <div class="space-y-6">
+                            <div class="flex gap-4 p-6 rounded-xl bg-neutral-900/50 border border-neutral-800/50">
+                                <div class="w-10 h-10 rounded bg-[#2dced8]/10 flex items-center justify-center border border-[#2dced8]/20 flex-shrink-0">
+                                    <i data-lucide="fingerprint" class="w-5 h-5 text-teal-custom"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-medium mb-1">Identity Orchestration Vetting</h4>
+                                    <p class="text-neutral-400 text-sm">
+                                        Identity signals like phone, email, social presence, and behavior patterns.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-6 rounded-xl bg-neutral-900/50 border border-neutral-800/50">
+                                <div class="w-10 h-10 rounded bg-[#2dced8]/10 flex items-center justify-center border border-[#2dced8]/20 flex-shrink-0">
+                                    <i data-lucide="database" class="w-5 h-5 text-teal-custom"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-medium mb-1">Pattern Benchmarking</h4>
+                                    <p class="text-neutral-400 text-sm">
+                                        Compared against Phishee’s proprietary dataset built from real recruiting traffic.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-6 rounded-xl bg-neutral-900/50 border border-neutral-800/50">
+                                <div class="w-10 h-10 rounded bg-[#2dced8]/10 flex items-center justify-center border border-[#2dced8]/20 flex-shrink-0">
+                                    <i data-lucide="zap" class="w-5 h-5 text-teal-custom"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white font-medium mb-1">Signal Analysis</h4>
+                                    <p class="text-neutral-400 text-sm">
+                                        AI-assisted analysis highlights risk signals and provides recommendations.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex gap-4 p-6 rounded-xl bg-emerald-500/10 border border-emerald-500/20">
+                                <div class="w-10 h-10 rounded bg-emerald-500/10 flex items-center justify-center border border-emerald-500/20 flex-shrink-0">
+                                    <i data-lucide="user-check" class="w-5 h-5 text-emerald-400"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-emerald-400 font-medium mb-1">Decision Support</h4>
+                                    <p class="text-neutral-300 text-sm">
+                                        Human-in-the-loop by design to ensure context and accuracy.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bridge CTA to glossary page -->
+        <section class="py-24 px-6 relative z-10 text-center">
+            <div class="max-w-4xl mx-auto relative z-10">
+                <div class="w-16 h-16 bg-teal-custom/10 rounded-full flex items-center justify-center mx-auto mb-8 border border-teal-custom/20">
+                    <i data-lucide="book-open" class="text-teal-custom w-8 h-8"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">Speak the CISO’s Language</h2>
+                <p class="text-xl text-neutral-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                    IP Piercing. Behavioral Biometrics. Prompt Injection. <br class="hidden md:block">
+                    The threat landscape is evolving faster than the terminology.
+                </p>
+                <a href="glossary.html" class="inline-flex items-center gap-2 text-teal-custom font-bold text-lg border-b-2 border-teal-custom/30 hover:border-teal-custom transition-all pb-1">
+                    Explore Cybersecurity 101 for HR <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-32 px-6">
+            <div class="max-w-5xl mx-auto rounded-[3rem] bg-gradient-to-b from-neutral-900 to-neutral-950 border border-neutral-800 p-12 md:p-24 text-center">
+                <h2 class="text-4xl md:text-6xl font-bold text-white mb-8 tracking-tight leading-tight">
+                    Protect your perimeter.
+                </h2>
+                <a href="request-access.html" class="inline-flex px-10 py-5 bg-teal-custom text-neutral-950 rounded-xl font-bold text-xl hover:scale-105 transition-all">
+                    Request Early Access
+                </a>
+                <div class="max-w-5xl mx-auto mt-12">
+                    <p class="text-2xl md:text-3xl font-bold text-neutral-300 mb-12 leading-relaxed">
+                        Coordinated application attacks. AI-generated identities. Fake candidates. What used to be a recruiting problem is now your biggest enterprise risk.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 px-6 border-t border-neutral-900 relative z-10">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <span class="text-lg font-bold text-white tracking-tighter opacity-50">PHISHEE</span>
+            <p class="text-neutral-600 text-xs">© 2026 Phishee Security Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+            window.lucide.createIcons();
+        }
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (!nav) return;
+            if (window.scrollY > 20) {
+                nav.classList.add('bg-neutral-950/80', 'backdrop-blur-md', 'border-b', 'border-neutral-800', 'py-4');
+                nav.classList.remove('bg-transparent', 'py-6');
+            } else {
+                nav.classList.remove('bg-neutral-950/80', 'backdrop-blur-md', 'border-b', 'border-neutral-800', 'py-4');
+                nav.classList.add('bg-transparent', 'py-6');
+            }
+        });
+
+        let isMenuOpen = false;
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (!menu) return;
+            menu.classList.toggle('hidden');
+            isMenuOpen = !isMenuOpen;
+        }
+    </script>
+</body>
+</html>
